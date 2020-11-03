@@ -2,7 +2,7 @@
 
 Top Offers app using VIPER Architecture
 
-Modules:
+# Modules:
 
 Top Offers Module
 
