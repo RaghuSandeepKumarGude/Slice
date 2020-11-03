@@ -33,15 +33,13 @@ class SliceOfferViewController: UIViewController {
         self.navigationController?.navigationBar.barTintColor = UIColor(hexString: "#E5E5E5")
         self.title = ""
         self.navigationController?.navigationBar.prefersLargeTitles = false
-        
         self.navigationController?.navigationBar.isTranslucent = false
-        self.navigationController?.navigationBar.tintColor = UIColor.orange
-        
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.backgroundColor = UIColor.clear
         
-        let shadowView = UIView(frame: CGRect(x: 0, y: 0,
+        let shadowView = UIView(frame: CGRect(x: 0,
+                                              y: 0,
                                               width: (self.navigationController?.navigationBar.bounds.width)!,
                                               height: (self.navigationController?.navigationBar.bounds.height)! + 40))
         shadowView.backgroundColor = UIColor.clear

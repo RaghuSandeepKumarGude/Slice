@@ -25,13 +25,14 @@ class OfferDetailViewController: UIViewController {
     @IBOutlet weak var vocherValidity: UILabel!
     
     @IBOutlet weak var copyVocherCode: UIButton!
+    @IBOutlet weak var offerExpiresView: UIButton!
     @IBOutlet weak var sahreInfo: UIButton!
     
     @IBOutlet weak var sellerImageHolder: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         if let topShadow = UIImage(named: "topGradient") {
             UIGraphicsBeginImageContext(topGradient.frame.size)
             topShadow.draw(in: topGradient.bounds)
@@ -56,8 +57,11 @@ class OfferDetailViewController: UIViewController {
         return true
     }
     private func updateUIElements() {
-        offerImageHolder.layer.cornerRadius = 2*Constants.offerbannerCornerRadius
-        bottomGradient.layer.cornerRadius = 2*Constants.offerbannerCornerRadius
+        
+        offerImageHolder.roundCorners(cornerRadius: Double(2*Constants.offerbannerCornerRadius), corners: [.layerMaxXMaxYCorner, .layerMinXMaxYCorner])
+        bottomGradient.roundCorners(cornerRadius: Double(2*Constants.offerbannerCornerRadius), corners: [.layerMaxXMaxYCorner, .layerMinXMaxYCorner])
+        
+        
         backArrowHeader.text = "top offers"
         backArrowHeader.textColor = .white
         backArrowHeader.font = UIFont(name: "HelveticaNeue", size: 20)
@@ -69,9 +73,7 @@ class OfferDetailViewController: UIViewController {
         offerDescription.textColor = .white
         offerDescription.font = UIFont(name: "HelveticaNeue", size: 16)
         offerDescription.textAlignment = .left
-        
         sellerImageHolder.layer.cornerRadius = Constants.cornerRadius
-        
         vocherHeader.textColor = UIColor(hexString: "#37305E")
         vocherHeader.font = UIFont(name: "HelveticaNeue", size: 16)
         vocherHeader.alpha = 0.7
@@ -89,6 +91,23 @@ class OfferDetailViewController: UIViewController {
         vocherValidity.alpha = 0.7
         vocherValidity.font = UIFont(name: "HelveticaNeue", size: 16)
         vocherValidity.textAlignment = .left
+        
+        offerExpiresView.backgroundColor = UIColor(hexString: "#FF8500")
+        let expiresIcon = UIImage(named: "expiresSoonIcon")
+        offerExpiresView.setImage(expiresIcon, for: .normal)
+        offerExpiresView.setTitle("expires soon", for: .normal)
+        offerExpiresView.setTitleColor(.white, for: .normal)
+        offerExpiresView.imageEdgeInsets = addEdgeInsert()
+        offerExpiresView.titleLabel?.font = UIFont(name: "HelveticaNeue", size: 16)
+        offerExpiresView.roundCorners(cornerRadius: 8, corners: [.layerMinXMaxYCorner,
+                                                                 .layerMaxXMaxYCorner])
+    }
+    
+    private func addEdgeInsert() -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0,
+                            left: 0,
+                            bottom: 0,
+                            right: 13)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -139,5 +158,13 @@ extension OfferDetailViewController: OfferDetailPresenterToViewProtocol {
     func offerSelected(offer: OffersInfo?) {
         selectedOffer = offer
         self.reloadView()
+    }
+}
+
+extension UIView {
+    func roundCorners(cornerRadius: Double, corners: CACornerMask) {
+        self.layer.cornerRadius = CGFloat(cornerRadius)
+        self.clipsToBounds = true
+        self.layer.maskedCorners = corners
     }
 }
