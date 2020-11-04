@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 
 protocol OfferDetailRouterProtocol: class {
-    static func createOfferDetailRouterModule(with product: OffersInfo) -> UIViewController
+    static func createOfferDetailRouterModule(with product: OffersInfo) -> OfferDetailViewController
     func navigateBackToListViewController(from view: OfferDetailPresenterToViewProtocol)
 }
 

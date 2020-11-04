@@ -32,6 +32,11 @@
 		2CFC935E2552120D00D79156 /* SliceOfferPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFC935D2552120D00D79156 /* SliceOfferPresenterTest.swift */; };
 		2CFC9360255219D900D79156 /* SliceOffersInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFC935F255219D900D79156 /* SliceOffersInteractorTest.swift */; };
 		2CFC936225521E5A00D79156 /* SliceOfferRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFC936125521E5A00D79156 /* SliceOfferRouterTest.swift */; };
+		2CFC93652552286700D79156 /* MockProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFC93642552286700D79156 /* MockProtocols.swift */; };
+		2CFC936725522A0C00D79156 /* OfferDetailsPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFC936625522A0C00D79156 /* OfferDetailsPresenterTest.swift */; };
+		2CFC936A25522C7700D79156 /* OfferDetailMockProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFC936925522C7700D79156 /* OfferDetailMockProtocol.swift */; };
+		2CFC936C25522EC700D79156 /* OfferDetailsIntractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFC936B25522EC700D79156 /* OfferDetailsIntractorTest.swift */; };
+		2CFC936E2552307C00D79156 /* OfferDetailsRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFC936D2552307C00D79156 /* OfferDetailsRouterTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +79,11 @@
 		2CFC935D2552120D00D79156 /* SliceOfferPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliceOfferPresenterTest.swift; sourceTree = "<group>"; };
 		2CFC935F255219D900D79156 /* SliceOffersInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliceOffersInteractorTest.swift; sourceTree = "<group>"; };
 		2CFC936125521E5A00D79156 /* SliceOfferRouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliceOfferRouterTest.swift; sourceTree = "<group>"; };
+		2CFC93642552286700D79156 /* MockProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockProtocols.swift; sourceTree = "<group>"; };
+		2CFC936625522A0C00D79156 /* OfferDetailsPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailsPresenterTest.swift; sourceTree = "<group>"; };
+		2CFC936925522C7700D79156 /* OfferDetailMockProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailMockProtocol.swift; sourceTree = "<group>"; };
+		2CFC936B25522EC700D79156 /* OfferDetailsIntractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailsIntractorTest.swift; sourceTree = "<group>"; };
+		2CFC936D2552307C00D79156 /* OfferDetailsRouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailsRouterTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,9 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				2C9F32D4254CA6BD00467DBE /* Info.plist */,
-				2CFC935D2552120D00D79156 /* SliceOfferPresenterTest.swift */,
-				2CFC935F255219D900D79156 /* SliceOffersInteractorTest.swift */,
-				2CFC936125521E5A00D79156 /* SliceOfferRouterTest.swift */,
+				2CFC9363255227B100D79156 /* ListModule */,
+				2CFC936825522A1600D79156 /* Details Module */,
 			);
 			path = SliceTests;
 			sourceTree = "<group>";
@@ -289,6 +298,28 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		2CFC9363255227B100D79156 /* ListModule */ = {
+			isa = PBXGroup;
+			children = (
+				2CFC935D2552120D00D79156 /* SliceOfferPresenterTest.swift */,
+				2CFC935F255219D900D79156 /* SliceOffersInteractorTest.swift */,
+				2CFC936125521E5A00D79156 /* SliceOfferRouterTest.swift */,
+				2CFC93642552286700D79156 /* MockProtocols.swift */,
+			);
+			path = ListModule;
+			sourceTree = "<group>";
+		};
+		2CFC936825522A1600D79156 /* Details Module */ = {
+			isa = PBXGroup;
+			children = (
+				2CFC936625522A0C00D79156 /* OfferDetailsPresenterTest.swift */,
+				2CFC936925522C7700D79156 /* OfferDetailMockProtocol.swift */,
+				2CFC936B25522EC700D79156 /* OfferDetailsIntractorTest.swift */,
+				2CFC936D2552307C00D79156 /* OfferDetailsRouterTest.swift */,
+			);
+			path = "Details Module";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -416,9 +447,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CFC936E2552307C00D79156 /* OfferDetailsRouterTest.swift in Sources */,
 				2CFC936225521E5A00D79156 /* SliceOfferRouterTest.swift in Sources */,
+				2CFC936C25522EC700D79156 /* OfferDetailsIntractorTest.swift in Sources */,
+				2CFC936A25522C7700D79156 /* OfferDetailMockProtocol.swift in Sources */,
+				2CFC93652552286700D79156 /* MockProtocols.swift in Sources */,
 				2CFC9360255219D900D79156 /* SliceOffersInteractorTest.swift in Sources */,
 				2CFC935E2552120D00D79156 /* SliceOfferPresenterTest.swift in Sources */,
+				2CFC936725522A0C00D79156 /* OfferDetailsPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

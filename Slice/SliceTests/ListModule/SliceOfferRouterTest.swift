@@ -11,7 +11,7 @@ import XCTest
 
 class SliceOfferRouterTest: XCTestCase {
     var router: SliceOfferRouter?
-    var view = SliceOfferMockView()
+    var mockViewController = SliceOfferMockView()
     
     override func setUp() {
         router = SliceOfferRouter()
@@ -30,7 +30,7 @@ class SliceOfferRouterTest: XCTestCase {
     }
     
     func testPresentToDetailScreen() {
-        let navigationController = MockNavigationController(rootViewController: view)
+        let navigationController = MockNavigationController(rootViewController: mockViewController)
         UIApplication.shared.keyWindow?.rootViewController = navigationController
         
         let offer = OffersInfo(voucherCode: "voucherCode",
@@ -42,9 +42,9 @@ class SliceOfferRouterTest: XCTestCase {
                                discount: "discount",
                                seller: "seller",
                                shareData: "shareData")
-        router?.presentToDetailScreen(from: view,
+        router?.presentToDetailScreen(from: mockViewController,
                                       for: offer)
         XCTAssertNotNil(navigationController.pushedViewController)
-        XCTAssertTrue(view.navigationController?.viewControllers.count ?? 0 > 0)
+        XCTAssertTrue(mockViewController.navigationController?.viewControllers.count ?? 0 > 0)
     }
 }

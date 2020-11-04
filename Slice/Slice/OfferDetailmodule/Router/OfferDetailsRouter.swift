@@ -22,7 +22,7 @@ public class OfferDetailsRouter: OfferDetailRouterProtocol {
         return UIStoryboard(name:"Main",bundle: Bundle.main)
     }
     
-     static func createOfferDetailRouterModule(with product: OffersInfo) -> UIViewController {
+     static func createOfferDetailRouterModule(with product: OffersInfo) -> OfferDetailViewController {
         let view = mainstoryboard.instantiateViewController(withIdentifier: "OfferDetailView") as! OfferDetailViewController
         let presenter: OfferDetailViewToPresenterProtocol & OfferDetailInteractorToPresenterProtocol = OfferDetailsPresenter()
         let interactor: OfferDetailPresenterToInteractorProtocol = OfferDetailsIntractor()
