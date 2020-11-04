@@ -12,6 +12,10 @@ class SliceOffersInteractor: PresenterToInteractorProtocol {
     private var apiservice = DataManager()
     weak var presenter: InteractorToPresenterProtocol?
     
+    init(apiservice :DataManager  = DataManager()) {
+        self.apiservice = apiservice
+    }
+    
     func fetchOffers() {
         apiservice.fetchOffersList { [weak self] (response, error) in
             guard let weakSelf = self else {return}

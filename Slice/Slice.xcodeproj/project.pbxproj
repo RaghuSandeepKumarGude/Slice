@@ -12,7 +12,6 @@
 		2C9F32C3254CA6BB00467DBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9F32C1254CA6BB00467DBE /* Main.storyboard */; };
 		2C9F32C5254CA6BD00467DBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C9F32C4254CA6BD00467DBE /* Assets.xcassets */; };
 		2C9F32C8254CA6BD00467DBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9F32C6254CA6BD00467DBE /* LaunchScreen.storyboard */; };
-		2C9F32D3254CA6BD00467DBE /* SliceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9F32D2254CA6BD00467DBE /* SliceTests.swift */; };
 		2C9F32E0254CA93700467DBE /* SliceOfferRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9F32DF254CA93700467DBE /* SliceOfferRouter.swift */; };
 		2C9F32E3254CA96E00467DBE /* SliceOfferPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9F32E2254CA96E00467DBE /* SliceOfferPresenter.swift */; };
 		2C9F32E7254CA99800467DBE /* SliceOffersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9F32E6254CA99800467DBE /* SliceOffersInteractor.swift */; };
@@ -30,6 +29,9 @@
 		2C9F3336254EDD0800467DBE /* OfferDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9F3335254EDD0800467DBE /* OfferDetailsPresenter.swift */; };
 		2C9F333A254EDD4700467DBE /* OfferDetailsIntractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9F3339254EDD4700467DBE /* OfferDetailsIntractor.swift */; };
 		2C9F333D254EDE9B00467DBE /* OfferDetailViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9F333C254EDE9B00467DBE /* OfferDetailViewProtocol.swift */; };
+		2CFC935E2552120D00D79156 /* SliceOfferPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFC935D2552120D00D79156 /* SliceOfferPresenterTest.swift */; };
+		2CFC9360255219D900D79156 /* SliceOffersInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFC935F255219D900D79156 /* SliceOffersInteractorTest.swift */; };
+		2CFC936225521E5A00D79156 /* SliceOfferRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFC936125521E5A00D79156 /* SliceOfferRouterTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +53,6 @@
 		2C9F32C7254CA6BD00467DBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C9F32C9254CA6BD00467DBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C9F32CE254CA6BD00467DBE /* SliceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SliceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C9F32D2254CA6BD00467DBE /* SliceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliceTests.swift; sourceTree = "<group>"; };
 		2C9F32D4254CA6BD00467DBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C9F32DF254CA93700467DBE /* SliceOfferRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliceOfferRouter.swift; sourceTree = "<group>"; };
 		2C9F32E2254CA96E00467DBE /* SliceOfferPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliceOfferPresenter.swift; sourceTree = "<group>"; };
@@ -70,6 +71,9 @@
 		2C9F3335254EDD0800467DBE /* OfferDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailsPresenter.swift; sourceTree = "<group>"; };
 		2C9F3339254EDD4700467DBE /* OfferDetailsIntractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailsIntractor.swift; sourceTree = "<group>"; };
 		2C9F333C254EDE9B00467DBE /* OfferDetailViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailViewProtocol.swift; sourceTree = "<group>"; };
+		2CFC935D2552120D00D79156 /* SliceOfferPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliceOfferPresenterTest.swift; sourceTree = "<group>"; };
+		2CFC935F255219D900D79156 /* SliceOffersInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliceOffersInteractorTest.swift; sourceTree = "<group>"; };
+		2CFC936125521E5A00D79156 /* SliceOfferRouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliceOfferRouterTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +129,10 @@
 		2C9F32D1254CA6BD00467DBE /* SliceTests */ = {
 			isa = PBXGroup;
 			children = (
-				2C9F32D2254CA6BD00467DBE /* SliceTests.swift */,
 				2C9F32D4254CA6BD00467DBE /* Info.plist */,
+				2CFC935D2552120D00D79156 /* SliceOfferPresenterTest.swift */,
+				2CFC935F255219D900D79156 /* SliceOffersInteractorTest.swift */,
+				2CFC936125521E5A00D79156 /* SliceOfferRouterTest.swift */,
 			);
 			path = SliceTests;
 			sourceTree = "<group>";
@@ -410,7 +416,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C9F32D3254CA6BD00467DBE /* SliceTests.swift in Sources */,
+				2CFC936225521E5A00D79156 /* SliceOfferRouterTest.swift in Sources */,
+				2CFC9360255219D900D79156 /* SliceOffersInteractorTest.swift in Sources */,
+				2CFC935E2552120D00D79156 /* SliceOfferPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
