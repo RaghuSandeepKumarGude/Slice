@@ -128,7 +128,7 @@ class OfferDetailViewController: UIViewController {
         vocherCode.text = selectedOffer?.voucherCode
         vocherDesc.text = selectedOffer?.voucherDesc
         vocherValidity.text = selectedOffer?.validTill
-        
+        offerExpiresView.isHidden = !(selectedOffer?.isExpiringSoon  ?? true)
         sellerImage.image = Seller(rawValue: selectedOffer?.seller?.lowercased() ?? "")?.sellerImage
     }
     
