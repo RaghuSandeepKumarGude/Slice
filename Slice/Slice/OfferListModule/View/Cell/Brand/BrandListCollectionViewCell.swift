@@ -40,6 +40,7 @@ class BrandListCollectionViewCell: UICollectionViewCell {
         offerBGView.isHidden = true
         offerPercentage.textColor = .white
         offerTitle.textColor = .white
+        productImage.layer.cornerRadius = Constants.offerbannerCornerRadius
         offerBGView.layer.cornerRadius = Constants.cornerRadius
         offerBGView.backgroundColor = Constants.offerBackgroundColor
         offerBGView.alpha = 0.9
@@ -52,6 +53,10 @@ class BrandListCollectionViewCell: UICollectionViewCell {
         offerPercentage.text = offer
         offerTitle.text = "OFF"
         sellerImage.image = Seller(rawValue: product?.seller?.lowercased() ?? "")?.sellerImage
+        if let bannerName = product?.voucherImage,
+            let bannerImage = UIImage(named: bannerName)  {
+           productImage.image = bannerImage
+        }
     }
 }
 

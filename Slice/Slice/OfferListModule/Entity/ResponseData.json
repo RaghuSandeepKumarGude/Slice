@@ -10,7 +10,8 @@
         "isExpiringSoon": true,
         "discount": "50% OFF",
         "seller": "Swiggy",
-        "shareData": "Hey, I am buying food using slice! Try using my invite code ABCD12345 to get credit."
+        "shareData": "Hey, I am buying food using slice! Try using my invite code ABCD12345 to get credit.",
+        "voucherImage": "CrispyChicken"
       },
       {
         "voucherCode": "BMS200",
@@ -21,7 +22,8 @@
         "isExpiringSoon": false,
         "discount": "20% OFF",
         "seller": "bookmyshow",
-        "shareData": "Hey, I am buying movie ticket using slice! Try using my invite code ABCD12345 to get credit."
+        "shareData": "Hey, I am buying movie ticket using slice! Try using my invite code ABCD12345 to get credit.",
+        "voucherImage": "Spiderman"
       },
       {
         "voucherCode": "SWIGGYFOOD",
@@ -32,7 +34,8 @@
         "isExpiringSoon": false,
         "discount": "30% OFF",
         "seller": "Swiggy",
-        "shareData": "Hey, I am buying food using slice! Try using my invite code ABCD12345 to get credit."
+        "shareData": "Hey, I am buying food using slice! Try using my invite code ABCD12345 to get credit.",
+        "voucherImage": "GingerChicken"
       }
     ],
     [
@@ -45,7 +48,8 @@
         "isExpiringSoon": true,
         "discount": "50% OFF",
         "seller": "Swiggy",
-        "shareData": "Hey, I am buying food using slice! Try using my invite code ABCD12345 to get credit."
+        "shareData": "Hey, I am buying food using slice! Try using my invite code ABCD12345 to get credit.",
+        "voucherImage": "CrispyChicken"
       },
       {
         "voucherCode": "BMS200",
@@ -56,7 +60,8 @@
         "isExpiringSoon": false,
         "discount": "20% OFF",
         "seller": "bookmyshow",
-        "shareData": "Hey, I am buying movie ticket using slice! Try using my invite code ABCD12345 to get credit."
+        "shareData": "Hey, I am buying movie ticket using slice! Try using my invite code ABCD12345 to get credit.",
+        "voucherImage": "Spiderman"
       },
       {
         "voucherCode": "SWIGGYFOOD",
@@ -67,7 +72,8 @@
         "isExpiringSoon": false,
         "discount": "30% OFF",
         "seller": "Swiggy",
-        "shareData": "Hey, I am buying food using slice! Try using my invite code ABCD12345 to get credit."
+        "shareData": "Hey, I am buying food using slice! Try using my invite code ABCD12345 to get credit.",
+        "voucherImage": "GingerChicken"
       }
     ],
     [
@@ -80,7 +86,8 @@
         "isExpiringSoon": true,
         "discount": "50% OFF",
         "seller": "Swiggy",
-        "shareData": "Hey, I am buying food using slice! Try using my invite code ABCD12345 to get credit."
+        "shareData": "Hey, I am buying food using slice! Try using my invite code ABCD12345 to get credit.",
+        "voucherImage": "CrispyChicken"
       },
       {
         "voucherCode": "BMS200",
@@ -91,7 +98,8 @@
         "isExpiringSoon": false,
         "discount": "20% OFF",
         "seller": "bookmyshow",
-        "shareData": "Hey, I am buying movie ticket using slice! Try using my invite code ABCD12345 to get credit."
+        "shareData": "Hey, I am buying movie ticket using slice! Try using my invite code ABCD12345 to get credit.",
+        "voucherImage": "Spiderman"
       },
       {
         "voucherCode": "SWIGGYFOOD",
@@ -102,7 +110,8 @@
         "isExpiringSoon": false,
         "discount": "30% OFF",
         "seller": "Swiggy",
-        "shareData": "Hey, I am buying food using slice! Try using my invite code ABCD12345 to get credit."
+        "shareData": "Hey, I am buying food using slice! Try using my invite code ABCD12345 to get credit.",
+        "voucherImage": "GingerChicken"
       }
     ]
   ]

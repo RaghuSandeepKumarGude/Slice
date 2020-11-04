@@ -16,5 +16,5 @@ struct OffersInfo: Codable {
     let voucherCode, voucherDesc, discountTitle, discountDesc: String?
     let validTill: String?
     let isExpiringSoon: Bool?
-    let discount, seller, shareData: String?
+    let discount, seller, shareData, voucherImage: String?
 }

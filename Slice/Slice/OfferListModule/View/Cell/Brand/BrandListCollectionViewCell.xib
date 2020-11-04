@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="177" height="277"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Joker" translatesAutoresizingMaskIntoConstraints="NO" id="9jp-L8-zHZ">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GingerChicken" translatesAutoresizingMaskIntoConstraints="NO" id="9jp-L8-zHZ">
                         <rect key="frame" x="0.0" y="0.0" width="177" height="277"/>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJ1-WQ-pFx">
@@ -96,6 +96,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="Joker" width="61.333332061767578" height="91"/>
+        <image name="GingerChicken" width="595" height="842"/>
     </resources>
 </document>
