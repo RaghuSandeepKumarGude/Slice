@@ -2,8 +2,8 @@
 
 Top Offers app using VIPER Architecture
 
-# Modules:
+## Modules:
 
-Top Offers Module
+### Top Offers Module
 
-Selected Offer View Module
+### Selected Offer View Module
